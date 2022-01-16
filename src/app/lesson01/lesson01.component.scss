@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 90px;
+    background-color: rgba(236, 234, 234, 0.548);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    box-shadow: 0 1px 2px rgba(191, 192, 190, 0.836);
+    font-family: sans-serif;
+    font-weight: normal;
+}
+.cenzor-box{
+    width: 650px;
+    height: 290px;
+    background-color: rgba(223, 221, 221, 0.192);
+    box-shadow: 0 1px 2px rgba(191, 192, 190, 0.836);
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.cenzor-text{
+    width: 100%;
+    height: 40px;
+    padding: 9px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+.cenzor-words{
+    display: flex;
+}
+#badWords{
+    color: rgba(220, 20, 60, 0.863);
+    padding-left: 5px;
+}
+.cenzor-input{
+    width: 100%;
+    height: 40px;
+    padding: 5px 9px 0 9px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+#inputWord{
+    width: 420px;
+    height: 30px;
+    outline: none;
+    border: 0;
+    box-shadow: 0 1px 2px rgba(191, 192, 190, 0.836);
+    border-radius: 3px;
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-right: 5px;
+}
+#btnAdd,#btnReset,#btnCenzor{
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: 0;
+    border-radius: 3px;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: white;
+}
+#btnAdd{
+    background-color: goldenrod;
+    box-shadow: 0 1px 2px rgba(161, 154, 46, 0.836);
+    margin-right: 5px;
+}
+#btnReset{
+    background-color: rgba(220, 20, 60, 0.863);
+    box-shadow: 0 1px 2px rgba(148, 37, 22, 0.836);
+}
+.cenzor-area{
+    padding: 5px 9px 0 9px;
+}
+#area{
+    resize: none;
+    outline: none;
+    border: 0;
+    box-shadow: 0 1px 2px rgba(191, 192, 190, 0.836);
+    border-radius: 3px;
+    padding: 6px;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+}
+.cenzor-button{
+    width: 100%;
+    padding: 5px 9px 0 9px;
+}
+#btnCenzor{
+    width: 100%;
+    height: 40px;
+    background-color: mediumseagreen;
+}

@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+.container-input{
+    width: 500px;
+    height: 350px;
+}
+input{
+    width: 500px;
+    height: 30px;
+    border-radius: 3px;
+    padding: 5px;
+    color: rgb(122, 120, 120);
+    border: 1px solid gainsboro;
+}
+input:focus{
+    outline-color: lightskyblue;
+}
+label{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(94, 85, 85);
+    line-height: 50px;
+    font-weight: bold;
+}
+#addUser,#editUser{
+    width: 90px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid rgb(22, 175, 80);
+    color: rgb(22, 175, 80);
+    border-radius: 3px;
+    margin-top: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#addUser:hover,#editUser:hover{
+    color: white;
+    background-color: rgb(22, 175, 80);
+}
+
+.container-table{
+    width: 500px;
+    height: 350px;
+    margin-left: 40px;
+    padding-top: 50px;
+}
+#table{
+    width: 500px;
+    line-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid gainsboro;
+    border-right-color: white;
+    border-left-color: white;
+    border-collapse: collapse;
+}
+td{
+    min-width: 60px;
+    text-align: center;
+}
+tr{
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+#edit{
+    width: 40px;
+    height: 25px;
+    background-color: rgb(247, 152, 9);
+    color: rgb(27, 31, 29);
+    border-radius: 3px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    box-shadow: 0 1px 2px rgb(116, 95, 3);
+}
+#delete{
+    width: 50px;
+    height: 25px;
+    background-color: rgb(247, 45, 9);
+    color: rgb(27, 31, 29);
+    border-radius: 3px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    box-shadow: 0 1px 2px rgb(192, 8, 8);
+}
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; 
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #a94442;
+  }

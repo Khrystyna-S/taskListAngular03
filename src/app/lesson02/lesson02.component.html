@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="container-input">
+        <form id="form">
+            <label for="login">Login</label>
+            <input [(ngModel)]="name" name="name" id="login" placeholder="Enter login" pattern="[a-zA-Z]{3,16}$" required minlength="3">
+            <label for="password">Password</label>
+            <input [(ngModel)]="password" name="password" id="password" placeholder="Enter password" pattern="[a-zA-Z0-9_\.-]{4,16}$" required>
+            <label for="email">Email adress</label>
+            <input [(ngModel)]="email" name="email" id="email" placeholder="Enter email" pattern="([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$" required>
+            <button *ngIf="!editStatus" (click)="addUser()" id="addUser">Add User</button>
+            <button *ngIf="editStatus" (click)="editedUser()" id="editUser">Edit User</button>
+        </form>
+    </div>
+    <div class="container-table">
+        <table id="table">
+            <tr>
+                <th>#</th>
+                <th>Login</th>
+                <th>Password</th>
+                <th>Email</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            <tbody id="tbody">
+                <tr *ngFor="let user of userArray; index as i">
+                    <td>{{ i+1 }}</td>
+                    <td>{{ user.login }}</td>
+                    <td>{{ user.password }}</td>
+                    <td>{{ user.email }}</td>
+                    <td><button (click)="editUzer(i)" id="edit">Edit</button></td>
+                    <td><button (click)="deleteUser(i)" id="delete">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

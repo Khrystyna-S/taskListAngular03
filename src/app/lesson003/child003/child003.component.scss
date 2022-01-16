@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-table{
+    width: 800px;
+    min-height: 50px;
+    background-color: rgba(220, 220, 220, 0.123);
+    margin: 0 auto;
+}
+#table{
+    width: 800px;
+    line-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    table-layout: fixed;
+    border: 1px solid gainsboro;
+    border-right-color: white;
+    border-left-color: white;
+    border-collapse: collapse;
+}
+td{
+    min-width: 60px;
+    text-align: center;
+    word-break: break-all;
+}
+tr{
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+.btnEdit{
+    width: 50px;
+    height: 25px;
+    background-color: hsl(50, 100%, 50%);
+    color: rgb(27, 31, 29);
+    border-radius: 3px;
+    font-weight: bold;
+    border: 0;
+    box-shadow: 0 1px 2px rgb(207, 176, 34);
+}
+.btnEdit:hover{
+    box-shadow: 0 12px 16px 0 rgba(212, 147, 6, 0.596), 0 17px 50px 0 rgba(212, 147, 6, 0.596);
+    cursor: pointer;
+}
+.btnDel{
+    width: 60px;
+    height: 25px;
+    background-color: hsl(20, 90%, 50%);
+    color: rgb(27, 31, 29);
+    border-radius: 3px;
+    font-weight: bold;
+    border: 0;
+    box-shadow: 0 1px 2px rgb(192, 8, 8);
+}
+.btnDel:hover{
+    box-shadow: 0 12px 16px 0 rgba(252, 5, 5, 0.521), 0 17px 50px 0 rgba(252, 5, 5, 0.521);
+    cursor: pointer;
+}
+.trHover:hover{
+    background-color: rgb(248, 248, 248);
+    border-top: 1px solid rgb(219, 216, 216);
+    border-bottom: 1px solid rgb(219, 216, 216);
+}
+#checks{
+    cursor: pointer;
+}
+.showMy{
+    height: 40px;
+    background-color: rgba(220, 220, 220, 0.123);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myInput{
+    width: 300px;
+    height: 25px;
+    border-radius: 2px;
+    color: rgb(122, 120, 120);
+    border: 1px solid gainsboro;
+    outline: rgba(220, 220, 220, 0.363);
+    margin-right: 20px;
+    padding: 4px;
+}
+.btnSave{
+    width: 40px;
+    height: 25px;
+    background-color: hsl(160, 50%, 50%);
+    border: 1px solid hsl(81, 148, 107);
+    border-radius: 4px;
+    color: white;
+}
+button[disabled]:hover {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}

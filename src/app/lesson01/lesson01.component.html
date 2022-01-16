@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="header">
+        <p>Angular list of prohibited words:</p>
+    </div>
+    <div class="cenzor-box">
+        <div class="cenzor-text">
+            <div class="cenzor-words"><span>Bad words:</span>
+                <div id="badWords"></div>
+            </div>
+        </div>
+        <div class="cenzor-input">
+            <form id="form">
+                <input name="text" [(ngModel)]="valueName" placeholder="word here..." id="inputWord">
+                <button (click)="getValue()" id="btnAdd">Add</button>
+                <button (click)="resetValue()" id="btnReset">Reset</button>
+            </form>
+        </div>
+        <div class="cenzor-area">
+            <textarea name="" id="area" cols="86" rows="8" placeholder="text here..."></textarea>
+        </div>
+        <div class="cenzor-button">
+            <button (click)="cenzorValue()" id="btnCenzor">Cenzor</button>
+        </div>
+    </div>
+</div>

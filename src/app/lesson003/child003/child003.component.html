@@ -1,0 +1,26 @@
+<div class="container-table">
+    <table id="table">
+        <tr>
+            <th>#</th>
+            <th>Task</th>
+            <th>Check</th>
+            <th>DONE/IN PROGRESS</th>
+            <th>Edit</th>
+            <th>DELETE</th>
+        </tr>
+        <tr class="trHover" *ngFor="let user of userTask; index as i;">
+            <th>{{ i+1 }}</th>
+            <th>{{ user.task }}</th>
+            <th><input type="checkbox" name="done" (click)="getChecked($event, i)" id="checks"></th>
+            <th><label for="done" *ngIf="user.check" [ngStyle]="{'color': 'hsl(160, 50%, 50%)'}">Done</label>
+                <label for="done" *ngIf="!user.check" [ngStyle]="{'color': 'red'}">In PROGRESS</label>
+            </th>
+            <th><button class="btnEdit" [disabled]="user.check" (click)="editUser(i)">Edit</button></th>
+            <th><button class="btnDel" [disabled]="!user.check" (click)="deleteUser(i)">Delete</button></th>
+        </tr> 
+    </table>
+    <div *ngIf="showMy" class="showMy">
+        <input type="text" [(ngModel)]="myInput" class="myInput">
+        <button (click)="btnSave()" class="btnSave">Save</button>
+    </div>
+</div>

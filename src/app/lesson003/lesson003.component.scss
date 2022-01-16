@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-first{
+    width: 800px;
+    height: 100px;
+    background-color: rgba(220, 220, 220, 0.123);
+    margin: 0  auto;
+    padding: 8px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 40px;
+    color: rgba(56, 54, 54, 0.829);
+}
+hr{
+    width: 800px; 
+    margin: 0 auto; 
+}
+.container-second{
+    width: 800px;
+    height: 80px;
+    background-color: rgba(220, 220, 220, 0.123);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.taskValue{
+    width: 630px;
+    height: 35px;
+    border-radius: 3px;
+    padding: 5px;
+    color: rgb(122, 120, 120);
+    border: 1px solid gainsboro;
+    outline: rgba(220, 220, 220, 0.363);
+}
+.taskBtn{
+    width: 150px;
+    height: 35px;
+    background-color: hsl(160, 50%, 50%);
+    border: 1px solid hsl(81, 148, 107);
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+
+    &:hover {
+        background-color: hsl(160, 40%, 50%);
+    }
+
+    &:focus {
+        outline: 2px solid hsl(160, 20%, 50%);
+    }
+}

@@ -1,0 +1,10 @@
+<div class="container-first">
+    <h2>Plan your day!</h2>
+    <h2>User: Ivan Ivanov.Count of task {{ count }}</h2>
+</div>
+<hr>
+<div class="container-second">
+    <input type="text" class="taskValue" [(ngModel)]="taskValue">
+    <button class="taskBtn" (click)="addTask()">Add</button>
+</div>
+<app-child003 [userTask]="userList" (fromChild)="getLength($event)"></app-child003>
